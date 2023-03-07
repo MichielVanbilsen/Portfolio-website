@@ -1,6 +1,11 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+
 gsap.registerPlugin(ScrollTrigger);
+
+// EYE CATCHER
+
+// PROJECTS
 
   gsap.to(".filled-text, .outline-text", {
     scrollTrigger: {
