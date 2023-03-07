@@ -12,8 +12,14 @@ const camera = new THREE.PerspectiveCamera(
   1000
 );
 const renderer = new THREE.WebGLRenderer({ alpha: true });
-renderer.setSize(window.innerWidth, 400);
 document.getElementById("bunny-container").appendChild(renderer.domElement);
+
+const container = document.getElementById("bunny-container");
+
+const width = container.clientWidth;
+const height = container.clientHeight;
+
+renderer.setSize(width, height);
 
 // Lights
 const ambientLight = new THREE.AmbientLight(0xff0000, 0.8);
@@ -30,8 +36,20 @@ directionalLight.shadow.camera.bottom = -7;
 directionalLight.position.set(-5, 5, 0);
 scene.add(directionalLight);
 
+// Set up the raycaster
+const raycaster = new THREE.Raycaster();
+const mouse = new THREE.Vector2();
+
+// Track the mouse position
+document.addEventListener('mousemove', event => {
+  // Calculate normalized device coordinates from the pixel coordinates
+  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+  mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+});
+
 // Create the orbit controls and bind them to the camera
 const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableZoom = false;
 
 // Load the bunny model with Draco compression
 const dracoLoader = new DRACOLoader();
@@ -43,7 +61,8 @@ gltfLoader.setDRACOLoader(dracoLoader);
 gltfLoader.load(
   "https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/bunny/model.gltf",
   (gltf) => {
-    scene.add(gltf.scene);
+    const model = gltf.scene;
+    scene.add(model);
   },
   undefined,
   (error) => {
@@ -55,7 +74,10 @@ gltfLoader.load(
 renderer.setClearColor(0xffffff);
 
 // Set the position of the camera and update it with the orbit controls
-camera.position.z = 5;
+camera.position.z = 3;
+camera.position.y = 2;
+camera.position.x = -1;
+
 function animate() {
   requestAnimationFrame(animate);
   controls.update();

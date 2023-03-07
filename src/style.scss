@@ -180,7 +180,8 @@ body {
         // border: solid green 2px;
 
         height: 100%;
-        margin-left: 5.6vw;
+        margin-left: 5.5vw;
+        width: 20vw;
 
         p {
           font-family: 'Anton';
@@ -192,18 +193,18 @@ body {
       .column-1 {
         // border: solid green 2px;
         height: 100%;
+        width: 20vw;
 
         .links {
           margin-top: 85px;
-          margin-left: 5vw;
         }
       }
 
       #bunny-container {
-        border: solid green 2px;
+        // border: solid green 2px;
 
         position: relative;
-        width: 100%;
+        width: 60vw;
         height: 100%;
       }
     }
