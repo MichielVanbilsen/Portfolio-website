@@ -40,7 +40,7 @@ body {
       // border: solid 2px red;
 
       width: 94.5vw;
-      margin-left: 5.6vw;
+      margin-left: 5.5vw;
 
       .eye-catcher {
         // border: solid 2px blue;
@@ -97,7 +97,62 @@ body {
       }
 
       .projects {
+        // border: solid 2px blue;
+
+        width: 94.5vw;
         height: 200vh;
+
+        .container {
+          // border: solid 2px blue;
+
+          margin-top: 10vh;
+          height: 110vh;
+          // background-color: #303030;
+          position: relative;
+          font-family: 'Poppins', sans-serif ;
+          font-size: 7vw;
+          -webkit-font-smoothing: antialiased;
+
+          .filled-text{
+            position: absolute;
+            top: 200px ;
+            left: 100px ;
+            z-index: 1 ;
+            font-size: 100px ;
+            font-weight: 600 ;
+          }
+          
+          .outline-text {
+            position: absolute;
+            top: 200px ;
+            left: 100px ;
+            z-index: 3 ;
+            font-size: 100px ;
+            font-weight: 600 ;
+            -webkit-text-stroke-width: 4px;
+            -webkit-text-stroke-color: #303030;
+            color: transparent;
+          }
+
+          img {
+            position: absolute;
+            top: 50px ;
+            left: 600px ;
+            z-index: 2 ;
+            height: 400px ;
+            width: auto ;
+          }
+
+          p {
+            font-size: 1vw;
+            font-family: 'Inter'; 
+            width: 60vh;
+            left: 5vw;
+            position: absolute;
+            top: 80vh;
+            color: #303030;
+          }
+        }
       }
     }
 
