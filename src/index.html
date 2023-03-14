@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.scss" />
     <script type="module" src="./script.js"></script>
     <script type="module" src="./gsap.js"></script>
+    <script type="module" src="./image-track.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Inter&display=swap"
       rel="stylesheet"
@@ -23,6 +24,7 @@
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.cdnfonts.com/css/switzer" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
@@ -48,7 +50,7 @@
         </section>
         <section class="introduction">
           <p>
-            "Hi, I'm Michiel, a passionate fullstack developer with a love for
+            Hi, I'm Michiel, a passionate fullstack developer with a love for
             creating unique and creative web projects. With a focus on
             integrating 3D models and making them interactive, I aim to create
             immersive and engaging web experiences for users. Throughout my
@@ -59,7 +61,7 @@
             life. Whether you're looking to showcase your business, tell a
             story, or create a new online experience, I'm excited to work with
             you and help you achieve your goals. Let's build something great
-            together!"
+            together!
           </p>
           <div class="view">
             <p class="vertical">VIEW MY WORK</p>
@@ -70,7 +72,7 @@
           <div class="container">
             <h2 class="filled-text">FULLSTACK DEVELOPER</h2>
             <h2 class="outline-text">FULLSTACK DEVELOPER</h2>
-            <img class="image" src="images/dev.jpg" />
+            <img class="introduction-image" src="images/dev.jpg" />
             <p>
               I studied Computer Science at PXL College in Hasselt, Belgium,
               specializing in full-stack development. It was during this degree
@@ -81,12 +83,22 @@
               knowledge in practical settings.
             </p>
           </div>
-          <div class="container-skills">
-            <h1>3js laptop here with skill levels of programming languages</h1>
+          <div class="seminars">
+            <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+              <img class="image" src="https://images.unsplash.com/photo-1670979313222-310eaa2d5601?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" draggable="false"/>
+              <img class="image" src="https://images.unsplash.com/photo-1671275421085-62dd342aa31a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" draggable="false"/>
+              <img class="image" src="https://images.unsplash.com/photo-1671272936351-b6510b6cb974?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" draggable="false"/>
+              <img class="image" src="https://images.unsplash.com/photo-1670909406638-97c92067cc43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" draggable="false"/>
+              <img class="image" src="https://images.unsplash.com/photo-1664574652984-5b5f769bef07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" draggable="false"/>
+              <img class="image" src="https://images.unsplash.com/photo-1671124594962-3b8ab41e5b6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" draggable="false"/>
+              <img class="image" src="https://images.unsplash.com/photo-1661956602868-6ae368943878?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" draggable="false"/>
+              <img class="image" src="https://images.unsplash.com/photo-1670837302975-8db32a473643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" draggable="false"/>
+              <img class="image" src="https://images.unsplash.com/photo-1671030970606-7113f6e1c665?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" draggable="false"/>
+            </div>
           </div>
-          <div class="container-sidescroll">
-            <h1>car driving animation going through the seminaries?</h1>
-          </div>
+        </section>
+        <section class="side-scroll">
+          <p>w.i.p ...</p>
         </section>
       </div>
       <div class="footer">
@@ -95,9 +107,9 @@
         </div>
         <div class="column-1">
           <div class="links">
-            <b>CONTACT</b>
+            <p class="bold">CONTACT</p>
             <p>michiel.vanbilsen@yappa.be</p>
-            <b>ON THE WEB</b>
+            <p class="bold">ON THE WEB</p>
             <p>LinkedIn</p>
             <p>Discord</p>
             <p>Instagram</p>

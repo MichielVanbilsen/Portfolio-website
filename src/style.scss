@@ -20,9 +20,8 @@ body {
       border-right: #303030 1px solid;
 
       position: fixed;
-      margin-top: -5vh;
 
-      width: 5.5vw;
+      width: 75px;
       height: 100vh;
 
       h3 {
@@ -39,21 +38,19 @@ body {
 
     .content-space {
       // border: solid 2px red;
-
-      width: 94.5vw;
-      margin-left: 5.5vw;
+      width: calc(100vw - 75px);
+      margin-left: 75px;
 
       .eye-catcher {
         // border: solid 2px blue;
-        margin-top: 5vh;
         height: 100vh;
 
         p {
           margin: 0;
-          font-family: 'Inter';
+          font-family: 'Switzer', sans-serif;
           font-size: 7vw;
-          // line-height: 1em;
-          font-weight: 1000;
+          line-height: 1.2em;
+          font-weight: 900;
         }
 
         #element1 {
@@ -91,8 +88,12 @@ body {
       .introduction {
         // border: solid 2px blue;
 
-        width: 30vw;
+        width: 35vw;
         margin-left: 45vw;
+
+        p {
+          font-size: 1.2vw;;
+        }
 
         .view {
           width: 5%;
@@ -123,15 +124,11 @@ body {
       .projects {
         // border: solid 2px blue;
 
-        width: 94.5vw;
-        height: 200vh;
-
         .container {
           // border: solid 2px blue;
 
-          margin-top: 10vh;
+          margin-top: 5vh;
           height: 110vh;
-          // background-color: #303030;
           position: relative;
           font-family: 'Poppins', sans-serif;
           font-size: 7vw;
@@ -141,9 +138,10 @@ body {
             position: absolute;
             top: 200px;
             left: 100px;
-            z-index: 1;
-            font-size: 100px;
+            z-index: 10;
+            font-size: 7vw;
             font-weight: 600;
+            color: #e7e2df;
           }
 
           .outline-text {
@@ -151,11 +149,11 @@ body {
             top: 200px;
             left: 100px;
             z-index: 3;
-            font-size: 100px;
+            font-size: 7vw;
             font-weight: 600;
-            -webkit-text-stroke-width: 4px;
+            -webkit-text-stroke-width: 12px;
             -webkit-text-stroke-color: #303030;
-            color: transparent;
+            // color: transparent;
           }
 
           img {
@@ -168,7 +166,7 @@ body {
           }
 
           p {
-            font-size: 1vw;
+            font-size: 1.2vw;
             font-family: 'Inter';
             width: 60vh;
             left: 15vw;
@@ -177,7 +175,35 @@ body {
             color: #303030;
           }
         }
+
+        .seminars {
+          // border: red solid 2px;
+          height: 100vh;
+          overflow: hidden;
+    
+          #image-track {
+            // border: green solid 2px;
+            display: flex;
+            gap: 4vmin;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(0%, -50%);
+      
+            .image {
+              width: 40vmin;
+              height: 56vmin;
+              object-fit: cover;
+              object-position: 100% center;
+            }
+          }
+        }
       }
+    }
+    
+    .side-scroll {
+      margin-left: 75px;
+      height: 100vh;
     }
 
     .footer {
@@ -191,8 +217,8 @@ body {
         // border: solid green 2px;
 
         height: 100%;
-        margin-left: 5.5vw;
-        width: 20vw;
+        margin-left: 75px;
+        width: 25vw;
 
         p {
           font-family: 'Anton';
@@ -207,7 +233,12 @@ body {
         width: 20vw;
 
         .links {
+          font-family: 'Switzer';
           margin-top: 85px;
+
+          .bold {
+            font-weight: 900;
+          }
         }
       }
 
@@ -215,7 +246,7 @@ body {
         // border: solid green 2px;
 
         position: relative;
-        width: 60vw;
+        width: 50vw;
         height: 100%;
       }
     }

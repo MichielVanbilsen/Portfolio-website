@@ -39,6 +39,17 @@ gsap.to("#element2, #element4", {
     x: 200,
   });
 
+  gsap.to(".introduction-image", {
+    scrollTrigger: {
+      trigger: ".introduction-image",
+      start: "introduction bottom",
+      end: "bottom introduction",
+      scrub: 1,
+      markers: false,
+    },
+    x: -250,
+  });
+
   gsap.to(".image", {
     scrollTrigger: {
       trigger: ".image",
@@ -47,5 +58,5 @@ gsap.to("#element2, #element4", {
       scrub: 1,
       markers: false,
     },
-    x: -250,
+    x: -2000,
   });
