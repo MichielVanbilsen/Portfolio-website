@@ -4,6 +4,28 @@ import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 // EYE CATCHER
+gsap.to("#element1, #element3, #element5", {
+  scrollTrigger: {
+    trigger: ".eye-catcher",
+    start: "top",
+    end: "bottom introduction",
+    scrub: 1,
+    markers: false,
+  },
+  x: -250,
+});
+
+gsap.to("#element2, #element4", {
+  scrollTrigger: {
+    trigger: ".eye-catcher",
+    start: "top",
+    end: "bottom introduction",
+    scrub: 1,
+    markers: false,
+  },
+  x: 250,
+});
+
 
 // PROJECTS
 
@@ -23,7 +45,7 @@ gsap.registerPlugin(ScrollTrigger);
       start: "introduction bottom",
       end: "bottom introduction",
       scrub: 1,
-      markers: true,
+      markers: false,
     },
     x: -250,
   });

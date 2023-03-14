@@ -20,6 +20,7 @@ body {
       border-right: #303030 1px solid;
 
       position: fixed;
+      margin-top: -5vh;
 
       width: 5.5vw;
       height: 100vh;
@@ -44,14 +45,35 @@ body {
 
       .eye-catcher {
         // border: solid 2px blue;
-
+        margin-top: 5vh;
         height: 100vh;
 
         p {
           margin: 0;
           font-family: 'Inter';
           font-size: 7vw;
+          // line-height: 1em;
           font-weight: 1000;
+        }
+
+        #element1 {
+          padding-left: 30vw;
+        }
+
+        #element2 {
+          padding-left: 5vw;
+        }
+
+        #element3 {
+          padding-left: 27vw;
+        }
+
+        #element4 {
+          padding-left: 3vw;
+        }
+
+        #element5 {
+          padding-left: 17vw;
         }
 
         .typewrite {
@@ -60,22 +82,11 @@ body {
           .wrap {
             background-color: #303030;
             color: #e7e2df;
+            padding-left: 8px;
+            padding-right: 8px;
           }
         }
       }
-
-      @keyframes blink-caret {
-
-        from,
-        to {
-          border-color: transparent
-        }
-
-        50% {
-          border-color: orange;
-        }
-      }
-
 
       .introduction {
         // border: solid 2px blue;
